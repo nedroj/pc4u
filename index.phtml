@@ -1,0 +1,129 @@
+<?php
+error_reporting(-1);
+session_start();
+include "functions/databasecon.php";
+include "functions/function.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pc4U</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/shop-homepage.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta2)/IE8.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="row">
+            <?php
+            switch ($_SESSION['rechten']) {
+                case 1:
+                    include "user/header.phtml";
+                    break;
+                case 2:
+                    include "admin/header.phtml";
+                    break;
+                default:
+                    include "default/header.phtml";
+                    break;
+            }
+            ?>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container" style="width:1225px;margin-top:25px;">
+    <div class="background">
+        <div class="row">
+
+            <div class="col-md-3" style="padding-left:0px; padding-right:0px;">
+                <?php
+                switch ($_SESSION['rechten']) {
+                    case 2:
+                        include "admin/menu.phtml";
+                        break;
+                    default:
+                        include "default/menu.phtml";
+                        break;
+
+                }
+                ?>
+            </div>
+            <div class="col-md-9">
+                <?php
+                switch ($_SESSION['rechten']) {
+                    case 2:
+                        $var = 'admin/' . $_GET['page'] . '.php';
+                        if (file_exists($var)) {
+                            include($var);
+                        } else {
+                            include('admin/home.phtml');
+                        }
+                        break;
+                    default:
+                        $var = 'php/' . $_GET['page'] . '.php';
+                        if (file_exists($var)) {
+                            include($var);
+                        } else {
+                            include('default/home.phtml');
+                        }
+                        break;
+
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+
+<div class="containerfooter">
+    <!-- Footer -->
+    <footer>
+        <?php
+        include "default/footer.phtml";
+        ?>
+    </footer>
+
+</div>
+<!-- /.container -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"
+        charset="utf-8"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+body
+{
+    background-color: grey;
+    margin:0%;
+}
+
+#container
+{
+    width: 100%;
+    height: auto;
+}
+
+#header
+{
+    height: 13%;
+    width: 100%;
+    background-color: black;
+    display: inline-block;
+}
+#redblock{
+    height: 2%;
+    width: 100%;
+    background-color: red;
+}
+#content{
+    height: 75%;
+    width: 90%;
+    background-color: #ffffff;
+    margin: auto;
+}
+#footer{
+    height: 10%;
+    width: 100%;
+    display: block;
+    background-color: black;
+}
+li{
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+.pinsta{
+    float: left;
+    width: 50px;
+    margin: 30px 0px 0px 0px;
+}
+.pfb{
+    float: left;
+    width:50px ;
+    margin: 30px 0px 0px 0px;
+}
+.ptwitter{
+    float: left;
+    width: 50px;
+    margin: 30px 0px 0px 0px;
+}
+.logo{
+    margin-top: 5%;
+    width: 80%;
+    float: left;
+}
+.centerheader{
+    float: left;
+    margin-top: 1%;
+    width: 30%;
+    height: 100%;
+    display: block;
+}
+.centerheaderdefault{
+    float: left;
+    margin-top: 1%;
+    width: 30%;
+    height: 100%;
+    border: solid #ff0000 1px;
+    background-color: #ffffff;
+}
+.leftheader{
+    float: right;
+    margin-top: 0%;
+    height: 100%;
+    width: 30%;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    list-style: none;
+}
+.footerwhite{
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+.Soc {
+    height: 30px;
+    width: 37px;
+    margin: 10px 0px 0px 5px;
+}
+
+.image {
+    background-size: cover;
+    width: 15%;
+    height: 10%;
+    margin-top: 10px;
+    margin-left: 3%;
+    float: right;
+}
+.image:hover{
+    cursor:pointer;
+}
+
+.Betaalmethode {
+    height: 40px;
+    width: 90px;
+    margin-top: 5px;
+}
+
+.IDEAL {
+    height: 40px;
+    width: 60px;
+    margin-top: 5px;
+}
+#InsideFooter {
+    color: #ffffff;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#footerklantenservice {
+    width: 20%;
+    height: 100%;
+    float: left;
+    margin-left: 10%;
+}
+
+#footerContact {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+#footerBetaal {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+#footerSocial {
+    width: 20%;
+    height: 100%;
+    float: right;
+    margin-right: 10%;
+}
+.containerfooter{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+}
+
+@media (min-width: 768px) {
+    .containerfooter {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .containerfooter {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .containerfooter {
+        width: 100%;
+    }
+}
+
+.containerfooter-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.containerfooter-fluid > .navbar-collapse, .containerfooter-fluid > .navbar-header, .containerfooter > .navbar-collapse, .containerfooter > .navbar-header {
+    margin-right: -15px;
+    margin-left: -15px
+}
+@media (min-width: 768px) {
+    .containerfooter-fluid > .navbar-collapse, .containerfooter-fluid > .navbar-header, .containerfooter > .navbar-collapse, .containerfooter > .navbar-header {
+        margin-right: 0;
+        margin-left: 0
+    }
+}
+@media (min-width: 768px) {
+    .navbar > .containerfooter .navbar-brand, .navbar > .containerfooter-fluid .navbar-brand {
+        margin-left: -15px
+    }
+}
+.containerfooter .jumbotron, .containerfooter-fluid .jumbotron {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px
+}
+.jumbotron .containerfooter {
+    max-width: 100%
+}
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px
+    }
+
+    .containerfooter .jumbotron, .containerfooter-fluid .jumbotron {
+        padding-right: 60px;
+        padding-left: 60px
+    }
+
+    .jumbotron .h1, .jumbotron h1 {
+        font-size: 63px
+    }
+}
+.btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .containerfooter-fluid:after, .containerfooter-fluid:before, .containerfooter:after, .containerfooter:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: table;
+    content: " "
+}
+
+.btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .containerfooter-fluid:after, .containerfooter:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .modal-header:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+    clear: both
+}
+#Copyright {
+    width: 100%;
+    height: 20px;
+    float: left;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}
+footer{
+    margin: 0px;
+}
+.background{
+    background-color: white;
+}
+#Pc4uInfo {
+    width: 278px;
+    height: 292.6px;
+    border:1px solid #222222;
+    margin-bottom:24px;
+    float: right;
+    font-size: 20px;
+    color: #222222;
+
+}
+
+#Pc4uInfo ul li {
+    list-style-type: none;
+    margin: 11px 5px 0px -20px;
+}
+
+#Pc4uInfo ul {
+    list-style-type: none;
+}
+.leftheaderdefault{
+    float: right;
+    margin-top: 1.35%;
+    height: 100%;
+    width: 19%;
+    display: block;
+    border: solid #ff0000 1px;
+    background-color: #ffffff;
+    padding-left: 2%;
+}
+.blackp{
+    color: #000;
+    text-align: center;
+    margin: 0%;
+}
+.leftheaderdefault table{
+
+}
+.login{
+    margin: auto;
+    background-color: black;
+}
+.login table{
+    margin: auto;
+}
+.login table tr td input{
+    color: black;
+}
+.tooltip {
+    position: relative;
+    opacity: 100;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 45%;
+    background-color: #ffffff;
+    border: solid 1px #ff0000;
+    color: #000000;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 22%;
+    margin-left: -65px;
+    margin-top: 5%;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.admin{
+    min-height: 400px;
+    height: 100%;
+    color: black;
+    border-left: solid 1px black;
+}
+.admin h1{
+    margin-left: 1%;
+    color: black;
+}
+.admin table{
+    margin-left: 1%;
+     border: black solid 1px;
+ }
+.admin table tr{
+    border: black solid 1px;
+}
+.admin table tr td{
+    border: black solid 1px;
+}
+.admin table tr th{
+    border: black solid 1px;
+}
+.userinfo {
+    color: black;
+}
+.userinfo table{
+    border: black solid 1px;
+}
+.userinfo table tr {
+    border: black solid 1px;
+}
+.userinfo table th {
+    border: black solid 1px;
+    padding: 2%;
+}
+.userinfo table tr td {
+    border: black solid 1px;
+    padding:2%;
+}
+.userinfo table tr th td {
+    border: black solid 1px;
+}
+.userinfo h1 {
+    align-content: center;
+}
+.message{
+    color: black;
+}
+.contact{
+    background-color: black;
+    color: white;
+}
+.contact input{
+    color:black;
+}

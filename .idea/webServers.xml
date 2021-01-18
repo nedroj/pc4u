@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="70e0e869-15a0-4ee8-a071-fa9f26b1aa83" name="jhdevpc4u" url="http://jhdev.nl">
+        <fileTransfer host="jhdev.nl" port="21" password="dfdfdfc4dfc9dfc6dfcfdfc8dfcfdfc4dfc3dfd9" username="pc4u@jhdev.nl">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
